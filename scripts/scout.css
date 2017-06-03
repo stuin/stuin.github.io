@@ -12,7 +12,7 @@ body, submit, input {
 	margin: 5px;
 }
 
-h1, h3, a, submit, input {
+h1, h3, a, submit, input, p {
 	color: #f9b234;
 }
 
