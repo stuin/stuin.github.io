@@ -6,3 +6,12 @@ body {
 ul {
         text-align: left;
 }
+
+#content .col {
+  float: left;
+}
+
+
+#footer {
+  clear: left;
+}
