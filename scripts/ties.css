@@ -14,6 +14,5 @@ div {
 .flex-container {
     display: -webkit-flex;
     display: none;
-	margin: 10px;
-	background-color: gray;
+	background-color: #B37C00;
 }
