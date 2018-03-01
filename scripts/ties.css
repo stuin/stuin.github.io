@@ -1,0 +1,19 @@
+body {
+        text-align: center;
+        background-color: #ffb100;
+}
+
+ul {
+        text-align: left;
+}
+
+div {
+	margin: 10px;
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: none;
+	margin: 10px;
+	background-color: gray;
+}
