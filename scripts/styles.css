@@ -3,7 +3,7 @@ body {
         background-color: #ffb100;
 }
 
-ul {
+ul, ol {
         text-align: left;
 }
 
@@ -13,4 +13,37 @@ ul {
 
 #footer {
   clear: left;
+}
+
+button, a {
+	background-color: #B37C00;
+	color: white;
+	cursor: pointer;
+	border: none;
+	text-decoration:none;
+	outline: none;
+	transition: 0.4s;
+	padding: 5px;
+}
+
+.flex-container {
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #B37C00;
+	padding: 0 18px;
+	max-height: 0;
+	margin: 10px;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+
+.accordion {
+	padding: 18px;
+	width: 75%;
+	text-align: left;
+}
+
+.active, .accordion:hover, a:hover {
+	background-color: #ccc;
 }
