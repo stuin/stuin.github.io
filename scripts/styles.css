@@ -1,18 +1,18 @@
 body {
-        text-align: center;
-        background-color: #ffb100;
+    text-align: center;
+    background-color: #ffb100;
 }
 
 ul, ol {
-        text-align: left;
+    text-align: left;
 }
 
 #content .col {
-  float: left;
+  	float: left;
 }
 
 #footer {
-  clear: left;
+  	clear: left;
 }
 
 button, a {
@@ -20,10 +20,18 @@ button, a {
 	color: white;
 	cursor: pointer;
 	border: none;
-	text-decoration:none;
+	text-decoration: none;
 	outline: none;
 	transition: 0.4s;
 	padding: 5px;
+}
+
+.norm {
+	background-color: #ffb100;
+	text-decoration: underline;
+	color: white;
+	padding: 0;
+	transition: 0s;
 }
 
 .flex-container {
