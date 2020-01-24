@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Stuin's Projects</title>
+        <title>StuinTech - Home</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="scripts/styles.css">
+        <script type="text/javascript" src="scripts/git-widget.js"></script>
     </head>
-    <body>
-        <h1>Stuin's Projects</h1>
+    <body onload="getData('stuin'); show('stuin.github.io', 'git1')">
+        <h1 id="Title">Main Projects</h1>
         <p>
             <a class="norm" href="https://github.com/stuin">Github</a>
             <a class="norm" href="https://stuin.itch.io/">Itch.io</a>
@@ -40,6 +41,7 @@
                         All are described using a consistant clear notation.
                     </li>
                     <li>
+                        <h3><div id='git1'></div></h3>
                         <p style="max-width:450px;">
                             This website itself was coded from scratch in html and css
                             so know that it is definitely a work in progress,
@@ -55,7 +57,6 @@
         <div id="footer">
             <p>
                 Stuart Irwin<br>
-                425-891-9987<br>
                 stuin01@gmail.com<br>
             </p>
         </div>

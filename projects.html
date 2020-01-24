@@ -2,16 +2,17 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Small Apps</title>
+        <title>StuinTech - Small Apps</title>
         <link rel="stylesheet" type="text/css" href="scripts/styles.css">
+        <script type="text/javascript" src="scripts/git-widget.js"></script>
     </head>
-    <body>
+    <body  onload="getData('stuin'); show('Infinite-Entelechy', 'git1')">
         <h1>Small Apps</h1>
         <a href="index">Back</a>
 
         <ul>
             <li>
-                <h3><a class="norm" href="https://stuin.itch.io/infinite-entelechy">Infinite Entelechy</a></h3>
+                <h3><div id='git1'></div></h3>
                 <p style="max-width:500px;">
                     The start of a larger project,
                     ended up as just a random galaxy generator.
@@ -36,13 +37,6 @@
                     <li>A word of the day app</li>
                     <li>Some visual tools and apis</li>
                 </ul>
-            </li>
-            <li>
-                <h3><a.norm href="https://trello.com/b/clRYPnaO/game-ideas">Board of game ideas</a></h3>
-                <p style="max-width:500px;">
-                    A whole Trello board of all the different ideas I have had,
-                    games I think it would be cool to make.
-                </p>
             </li>
         </ul>
     </body>

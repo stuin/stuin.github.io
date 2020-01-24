@@ -2,17 +2,19 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Ten Seconds To Symmetry</title>
+		<title>StuinTech - Ten Seconds</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="scripts/styles.css">
 		<style type="text/css">
 			p { text-align:center; max-width:700px; margin: 10px auto; }
 		</style>
+		<script type="text/javascript" src="scripts/git-widget.js"></script>
 	</head>
-	<body>
+	<body onload="getData('stuin'); show('Ten-Seconds-To-Symmetry', 'git1')">
 		<h1>Ten Seconds To Symmetry</h1>
-		<a href="index">Back</a>
+		<a href="index">Back</a><br>
 		<a class="norm" href="https://play.google.com/store/apps/details?id=com.stuin.tenseconds">Download free on Play Store</a>
+		<div id='git1'></div>
 
 		<p>
 			A game I started last year and my main published project.
@@ -39,7 +41,6 @@
 			Player and those contained by it run the movement and operation of the game itself,
 			Scoreboard sets the various messages shown in between the rounds.
 		</p>
-		If interested, the complete actual code can be found <a class="norm" href="https://github.com/stuin/Ten-Seconds-To-Symmetry">here.</a>
 		<p>
 			The game was originally inspired by a short game jam I did at a summer camp.
 			The main theme of the jam was that each round would be limited to ten seconds.

@@ -26,11 +26,18 @@ button, a {
 	padding: 5px;
 }
 
+.sub {
+	font-size: 70%;
+	position: relative;
+	top: -20px;
+	z-index: -1;
+}
+
 .norm {
 	background-color: #ffb100;
 	text-decoration: underline;
 	color: white;
-	padding: 0;
+	padding: 0px;
 	transition: 0s;
 }
 
