@@ -3,7 +3,7 @@ var data = [];
 var widgets = [];
 
 function processData(e) {
-	if(request.readyState == 4 && request.status == 200) { 
+	if(request.readyState == 4 && request.status == 200) {
 
 		var allLines = request.responseText.split('\n');
 		var repo = null;
@@ -26,11 +26,18 @@ function processData(e) {
 		//Send data to each widget
 		for (var i = 0, len = widgets.length; i < len; i++)
 			showAct(widgets[i])
+
+		if (allLines.length >= 30) {
+			console.log(request.responseURL)
+			page = Number(request.responseURL.split("=")[1]) + 1
+			request.open('GET', request.responseURL.split("=")[0] + "=" + page, true)
+			request.send();
+		}
 	}
 }
 
 function getData(user) {
-	request.open('GET', "https://api.github.com/users/" + user + "/repos", true)
+	request.open('GET', "https://api.github.com/users/" + user + "/repos?page=1", true)
 	request.send();
 	//document.write("api.github.com/users/" + user + "/repos")
 }
@@ -49,13 +56,14 @@ function showAct(widget) {
 	var out = [];
 
 	for (var i = 0, len = data.length; i < len; i++) {
-		if(data[i].includes(widget[0])) {
+		if(data[i] != null && data[i].includes(widget[0])) {
 			out = data[i];
 		}
 	}
-
-	var html = "<a class='norm' href=".concat(out[2], ">", out[0], "</a><div class='sub'><br>(Updated: ", out[3].split('T')[0], ")</div>")
-	document.getElementById(widget[1]).innerHTML = html;
+	if (out.length > 3) {
+		var html = "<a class='norm' href=".concat(out[2], ">", out[0], "</a><div class='sub'><br>(Updated: ", out[3].split('T')[0], ")</div>")
+		document.getElementById(widget[1]).innerHTML = html;
+	}
 }
 
 request.onreadystatechange = processData;
